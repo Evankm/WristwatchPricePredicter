@@ -1,15 +1,25 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    archive-zip (0.12.0)
+      io-like (~> 0.3.0)
     childprocess (3.0.0)
+    chromedriver-helper (2.1.1)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
     coderay (1.1.2)
+    io-like (0.3.1)
     method_source (1.0.0)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.9-x64-mingw32)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.6)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x64-mingw32)
+      racc (~> 1.4)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    racc (1.6.0)
     regexp_parser (1.7.0)
     rubyzip (2.3.0)
     selenium-webdriver (3.142.7)
@@ -20,9 +30,11 @@ GEM
       selenium-webdriver (~> 3.6)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
+  chromedriver-helper
   nokogiri
   pry
   watir
